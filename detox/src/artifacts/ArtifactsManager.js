@@ -2,9 +2,9 @@ const _ = require('lodash');
 const log = require('npmlog');
 const argparse = require('../utils/argparse');
 
-const ArtifactPathBuilder =  require('./core/lifecycle/utils/ArtifactPathBuilder');
-const RecorderLifecycle = require('./core/lifecycle/RecorderLifecycle');
-const SnapshotterLifecycle = require('./core/lifecycle/SnapshotterLifecycle');
+const ArtifactPathBuilder =  require('./core/utils/ArtifactPathBuilder');
+const RecorderLifecycle = require('./core/Recorder');
+const SnapshotterLifecycle = require('./core/Snapshotter');
 
 class ArtifactsManager {
   constructor({ artifactCapabilities }) {

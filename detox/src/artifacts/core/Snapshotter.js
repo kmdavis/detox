@@ -1,4 +1,4 @@
-class SnapshotterLifecycle {
+class Snapshotter {
   constructor({
     keepOnlyFailedTestsSnapshots,
     pathBuilder,
@@ -69,4 +69,4 @@ class SnapshotterLifecycle {
   }
 }
 
-module.exports = SnapshotterLifecycle;
+module.exports = Snapshotter;
